@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<title>Atribut Javascript</title>
+</head>
+<body>
+	<button onclick="alert('hooh">
+		Klik aku dong
+	</button>
+	<select id="lawak">
+	<option value="udin">Samsudin</option> 
+	<option value="jindan">Jindan</option>
+</select>
+	<script>
+	const select document.getElementById('lawak');
+	select.addEventListener('change', function () {
+		console.log(select.value);
+		if (select.value == 'udin') {
+			alert('hooh tenaan')
+		} else if (select.value=='jindan') {
+			alert('ente kadang-kadang')
+	</script>
+</body>
+</html>

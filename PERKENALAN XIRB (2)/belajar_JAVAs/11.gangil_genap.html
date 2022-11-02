@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ganjilGenap</title>
+</head>
+<body>
+    <style>
+        body {
+            text-align: center;
+        }
+        h2, h4{
+            margin: 0;
+        }
+        p#demo {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Program Menentukan Bilangan Ganjil Genap</h2>
+    <h4>visit us @https.ssty</h4>
+    <br >
+    <!-- Penginputan Bilangan yang akan Dicek -->
+    <p>Bilangan <input type="number" id="myNumber"> <button onclick="cekGanjilGenap()">Cek</button></p>
+    <p id="demo"></p>
+    <script>
+        //Penghitungan dan Pengecekan Hasil Modulo
+        function cekGanjilGenap(){
+            var bilangan = document.getElementById("myNumber").value
+            if(bilangan % 2 == 0)
+                document.getElementById("demo").innerText = "Bilangan Genap"
+            else
+                document.getElementById("demo").innerText = "Bilangan Ganjil"
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>

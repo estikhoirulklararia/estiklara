@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menentukan nilai</title>
+</head>
+<style>
+   *{
+       margin: 0;
+       padding: 0;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 18px;
+      
+   }
+   body{
+       margin: 50px;
+       background-image: url(webb.png);
+   }
+   .container{
+       margin: 10px;
+       text-align: center;
+       
+   }
+   form{
+       margin: 10px;
+       display: flex;
+       flex-direction: column;
+      
+            
+       
+   }
+   h1{
+       font-size: 2em;
+       text-shadow: 0 2PX 3px rgba(200, 9, 69, 0.5);
+   }
+   h1, pre input{
+    margin: 10px;
+    justify-content: center;
+   }
+
+   pre {
+      margin-left: -60px;
+   }
+   div .btn{
+       display: flex;
+       justify-content: center;
+       margin-left: -20px;
+   }
+   .button{
+       margin-bottom: 10px;
+       padding: 5px;
+       text-decoration: none;
+       background-color: rgb(4, 75, 120);
+       margin: 10px;
+       border: none;
+       border-radius: 4px;
+       color: white;
+       
+   }
+   .reset{
+       width: 100px;
+       margin-bottom: 10px;
+       padding: 5px;
+       margin: 10px;
+       border: none;
+       border-radius: 4px;
+       background-color: gray;
+       color: white;
+   }
+
+   .button:hover{
+    background-color: rgb(250, 10, 174);
+   }
+   .reset:hover{
+    background-color: rgb(16, 222, 36);
+   }
+  
+</style>
+<body>
+    <div class="container">
+    <form name="fform">
+        <h1>Masukkan nilai anda</h1>
+       <pre>
+            Nilai Ujian praktek: <input type="text" name="bilangan1" id="b1"  size="11">
+            Nilai PAS: <input type=" text" name="bilangan2" id="b2" size="11">
+            Nilai UAS: <input type="text" name="bilangan3"  id="b3" size="11">
+        </pre>
+       <div class="btn"> 
+       <div class="button1">
+       <button class="button" type="button" value="jumblahkan" id="jumblah"
+        onclick="jumlah()"> Jumlahkan 
+        </button>
+       </div>
+        <div class="reset1">
+            <button class="reset" type="reset" value="reset" > reset
+            </button>
+        </div>
+    </div>
+
+    </form>
+   </div>
+   <script>
+    function jumlah(){
+    const bil1=parseFloat (document.fform.bilangan1.value);
+    if(isNaN(bil1))
+    bil1=0.0;
+
+    const bil2=parseFloat (document.fform.bilangan2.value);
+    if(isNaN(bil1))
+    bil2=0.0;
+
+    const bil3=parseFloat (document.fform.bilangan3.value);
+    if(isNaN(bil1))
+    bil3=0.0;
+
+    // Operator aritmmatika
+    const nilaiAkhir=(((2*bil1)+(3*bil2)+(5*bil3))/10)
+    alert('Nilai Akhir anda adalah =' +nilaiAkhir);
+
+    // percabangan IF ELSE
+
+    if(nilaiAkhir>=90)
+    {
+    alert("A = Selamat Anda LULUS!!!!");
+    }
+    else if(nilaiAkhir>=85) 
+    {
+    alert("B+ = Selamat Anda LULUS!!!");
+    }
+    else if(nilaiAkhir>=80)
+    {
+    alert("B = Selamat Anda LULUS!!!!");
+    }
+    else if(nilaiAkhir>=75)
+    {
+    alert("C+ = Selamat Anda LULUS!!!!");
+    }
+    else if(nilaiAkhir>=70)
+    {
+    alert("C = Selamat Anda LULUS!!!!");
+    }
+    else if(nilaiAkhir>=65)
+    {
+    alert("D = yah beleum lulus nih, tetap semangat yah");
+    }
+    else
+    {
+    alert("E = yah beleum lulus nih, tetap semangat yah");
+    }
+    location.reload();
+    }
+    </script>
+<script src="script.js"></script>
+</body>
+</html>

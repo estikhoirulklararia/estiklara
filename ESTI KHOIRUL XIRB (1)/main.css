@@ -1,0 +1,78 @@
+.navigasi{
+	background-color:black;
+	color:white;
+	font-size: 70px;
+	overflow: hidden;
+	list-style: none;
+}	
+a:hover{
+	color: blue;
+}
+.navigasi li{
+	float: left;
+	margin: 10px;
+}
+.gambar{
+	width: 700px;
+	height: 600px;
+	border-radius: 200px;
+}
+.p1{
+	font-size: 200px;
+	font-family: sans-serif;
+}
+.gambar1{
+	width: 350px;
+	height: 350px;
+	border-radius: 50px;
+}
+.gambar1:hover{
+	transform: scale(1.1);
+}
+.p2{
+	background-color: blue;
+	font-size: 45px;
+}
+.p3{
+	background-color: blue;
+	font-size: 55px;
+}
+.p4{
+	font-size: 50px;
+}
+.p5{
+	font-size: 50px;
+}
+.sosmed{
+	width: 80px;
+	height: 80px;
+}
+.bio1{
+	font-size: 45px;
+	font-family: Times New Roman;
+	margin-left: 50px;
+}
+.sosmed{
+	width: 80px;
+	height: 80px;
+}
+.bapak{
+	background-color: grey;
+	padding-top: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.bapak2{
+	background-color: lightgrey;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+td{
+	padding: 5px;
+}
+.p6{
+	font-size: 40px;
+}
+.p7{
+	font-size: 50px;
+}
